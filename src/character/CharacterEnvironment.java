@@ -15,9 +15,11 @@ import java.awt.event.MouseEvent;
  * @author Katherine
  */
 class CharacterEnvironment extends Environment {
-
+    
+    private PatrickStarr patty;
+    
     public CharacterEnvironment() {
-        
+        patty = new PatrickStarr(100, 100);
     }
 
     @Override
@@ -47,7 +49,9 @@ class CharacterEnvironment extends Environment {
 
     @Override
     public void paintEnvironment(Graphics graphics) {
-        
+        if (patty != null) {
+            patty.draw(graphics);
+        }
     }
     
 }
