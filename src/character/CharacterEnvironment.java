@@ -6,6 +6,7 @@
 package character;
 
 import environment.Environment;
+import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
@@ -19,7 +20,9 @@ class CharacterEnvironment extends Environment {
     private PatrickStarr patty;
     
     public CharacterEnvironment() {
-        patty = new PatrickStarr(100, 100);
+        patty = new PatrickStarr(100, 100, 400, 400);
+        
+        this.setBackground(Color.white);
     }
 
     @Override
